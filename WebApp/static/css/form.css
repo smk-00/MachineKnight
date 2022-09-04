@@ -1,0 +1,119 @@
+.wrapper-form {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  border: 1px solid black;
+  margin: 0 5px;
+}
+select {
+  border: 1px solid black;
+  margin: 0 5px;
+}
+
+.wrapper-form header {
+  color: rgb(83, 83, 255);;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper-form form {
+  display: inline-block;
+  height: 100%;
+  width: 95%;
+  margin: 5px;
+  border-radius: 5px;
+  border: 2px dashed rgb(83, 83, 255);;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+.form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 1rem;
+}
+.form-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pickingarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+form :where(i, p) {
+  color: rgb(83, 83, 255);;
+}
+
+form i {
+  font-size: 50px;
+}
+form p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+form button {
+  margin: 5px;
+  padding: 5px 20px;
+  border: 0.5px solid rgb(83, 83, 255);;
+  border-radius: 5px;
+}
+
+section .area-row {
+  background: rgb(150, 150, 255);
+  margin-bottom: 10px;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+section .area-row i {
+  font-size: 30px;
+  color: rgb(83, 83, 255);;
+}
+section .details span {
+  font-size: 14px;
+}
+
+.uploaded-area {
+  max-height: 232px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.uploaded-area::-webkit-scrollbar {
+  width: 0px;
+}
+.uploaded-area .area-row .content {
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .area-row .details {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .area-row .details .size {
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check {
+  font-size: 16px;
+  margin: 0 10px;
+}

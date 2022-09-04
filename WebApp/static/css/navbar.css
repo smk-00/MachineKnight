@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #000000e5;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-brand {
+  margin: auto;
+}
+.navbar-brand h4,
+.navbar-brand span {
+  font-size: 40px;
+  font-weight: 900;
+}
+.color {
+  color: rgb(83, 83, 255);
+}
+.color-alt{
+  color:rgba(255, 255, 255, 0.9);
+}
+.nav-item {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-items a{
+  color: rgb(83, 83, 255) !important;
+}

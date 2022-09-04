@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+  background-color: rgb(250, 250, 250);
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  color: rgba(0, 0, 0);
+}
+
+.description {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; */
+  text-align: center;
+  
+  
+}
+.descinfo {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  padding: auto;
+  font-size: 1.5em;
+  width:90%;
+  margin:5%;
+  line-height: 2em;
+}
+.logo {
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: rgba(0, 0, 0);
+}
+
+.orginal-image{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pred-orgin{
+  align-self: center;
+}
+
+.orginal-image img{
+  width: 70%;
+}
+
+.analysis-section{
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.analysis-section div img{
+  width: 60%;
+}
+
+.broi-analysis-section{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.broi-analysis-section div img{
+  width: 50%;
+}
+
+.roi-analysis-section div img{
+  width: 100%;
+}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="description">
+  <div class="descinfo">
+    <div class="logo">Rent<span class = "color">Predictor</span></div> - is the web based application developed for a real estate
+    business, to predict the house rents in the regions. An AIModel which predict the house rent with high efficiency. Just upload the CSV.
+  </div>
+</div>
+  <div class="wrapper-form">
+    <header>Upload CSV File</header>
+    <form method="post" action="/upload" enctype="multipart/form-data"  id = 'filepicker' >
+      <div class="file-form-item">
+      <div id="pickingarea">
+      <input type = 'file' class = 'file-input' id = 'browser' name="file" autocomplete="off" required  hidden >
+      <i class = 'fas fa-cloud-upload-alt'></i>
+      <p>Browse file to Upload</p>
+    </div>
+    <section class = 'uploaded-area'></section>
+    </div>
+  <div class="form-grid"></div>
+  <button type="submit" value="Submit">Upload</button>
+    </form>
+  </div>
+      <p>
+          {% with messages = get_flashed_messages() %}
+          {% if messages %}
+      <ul class=flashes>
+          {% for message in messages %}
+          <li>{{ message }}</li>
+          {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+      </p>
+      
+{% endblock %}
