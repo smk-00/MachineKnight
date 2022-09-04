@@ -20,7 +20,7 @@ body{
   background-color: rgb(250, 250, 250);
   margin: 0 auto;
   background-color: #f8f8f8;
-  color: rgba(0, 0, 0);
+  color: rgba(27, 27, 27);
 }
 
 .description {
@@ -47,7 +47,7 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.5em;
   font-weight: 900;
-  color: rgba(0, 0, 0);
+  color: rgba(27, 27, 27);
 }
 
 .orginal-image{

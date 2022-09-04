@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #000000e5;
+  background-color: rgb(26,26,26);
 }
 .navbar-nav {
   margin-left: auto;
@@ -13,7 +13,7 @@
   font-weight: 900;
 }
 .color {
-  color: rgb(83, 83, 255);
+  color: tomato;
 }
 .color-alt{
   color:rgba(255, 255, 255, 0.9);
@@ -24,5 +24,5 @@
 }
 
 .navbar-items a{
-  color: rgb(83, 83, 255) !important;
+  color: tomato !important;
 }

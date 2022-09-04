@@ -23,9 +23,11 @@ It is a **regression** task. The features are in countinous and categorial.
 
 ## Model Training
 1. The **deep neural network** model is trained using **K-Fold**.
-2. The same data is used to train other 4 models BaggingRegressor, ExtraTreesRegressor, RandomForestRegressor, ExtraTreesRegressor.
+    i)  The **"Mean Absolute Error"** is used as loss function.
+    ii) The training **MAE loss** for the model is about **2700** and **RMSE** is about **3764**
+    iii) In each fold the model is trained for **100 epochs** with the **learning rate** of **1e-3**.
+2. The same data is used to train other 4 models BaggingRegressor, ExtraTreesRegressor, RandomForestRegressor, GradientBoostingRegressor at the end they are with the training RMSE loss of 3770, 3923, 3773, 3731.
 3. All these models are ensembled for prediction.
-
 
 # Frontend & Flask App
 ![image](https://user-images.githubusercontent.com/65155327/188319177-e2088d37-078d-4f67-8694-fdc77acc6443.png)
@@ -34,6 +36,7 @@ It is a **regression** task. The features are in countinous and categorial.
 The API was developed in python FLASK.<br>
 
 >> pip install -r requirements.py <br>
->> python WebApp/main.py<br>
+>> cd WebApp <br>
+>> python main.py<br>
 
 Check the **www.localhost:5000** for the frontend.

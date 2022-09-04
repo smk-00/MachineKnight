@@ -8,7 +8,7 @@ import joblib
 
 
 
-trainDf = pd.read_csv("../ML/train.csv")
+trainDf = pd.read_csv("./ML/dataset/train.csv")
 cols2Drop = ["id", "locality", "activation_date"]
 
 trainDf.drop(cols2Drop, axis=1, inplace=True)
@@ -133,10 +133,10 @@ def loadData(path):
 def predict(df):
     preds = []
 
-    BinModelPaths = ["../ML/models/regB.sav", "../ML/models/regET.sav", "../ML/models/regRF.sav", ]
+    BinModelPaths = ["./ML/models/regB.sav", "./ML/models/regET.sav", "./ML/models/regRF.sav", ]
 
     for i in range(1, 6):
-        model = tf.keras.models.load_model(f"../ML/models/BestModel_{i}.h5")
+        model = tf.keras.models.load_model(f"./ML/models/BestModel_{i}.h5")
         pred = model.predict(df).reshape(-1, )
         preds.append(pred)
 
