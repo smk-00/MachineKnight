@@ -32,8 +32,8 @@ It is a **regression** task. The features are in countinous and categorial.
 3. All these models are ensembled for prediction.
 
 # Frontend & Flask App
-![image](https://user-images.githubusercontent.com/65155327/188319177-e2088d37-078d-4f67-8694-fdc77acc6443.png)
-![image](https://user-images.githubusercontent.com/65155327/188319213-86e9d791-e6ad-43f2-aed9-cd17c4646007.png)
+![image](https://user-images.githubusercontent.com/65153292/188326798-d6039c1c-2d37-4123-b277-4792807b6a69.png)
+![image](https://user-images.githubusercontent.com/65153292/188326833-c7a8839c-2c46-49b1-b340-7e857682472f.png)
 
 The API was developed in python FLASK.<br>
 
