@@ -133,10 +133,10 @@ def loadData(path):
 def predict(df):
     preds = []
 
-    BinModelPaths = ["./models/regB.sav", "./models/regET.sav", "./models/regRF.sav", ]
+    BinModelPaths = ["../ML/models/regB.sav", "../ML/models/regET.sav", "../ML/models/regRF.sav", ]
 
     for i in range(1, 6):
-        model = tf.keras.models.load_model(f"./models/BestModel_{i}.h5")
+        model = tf.keras.models.load_model(f"../ML/models/BestModel_{i}.h5")
         pred = model.predict(df).reshape(-1, )
         preds.append(pred)
 

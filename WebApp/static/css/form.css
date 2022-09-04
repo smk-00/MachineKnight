@@ -15,7 +15,7 @@ select {
 }
 
 .wrapper-form header {
-  color: rgb(0,0, 255);;
+  color: rgb(83, 83, 255);
   font-size: 27px;
   font-weight: 600;
   text-align: center;
@@ -55,16 +55,19 @@ select {
   cursor: pointer;
 }
 
-form :where(i, p) {
-  color: white;
+form :where(p) {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
 
 form i {
+  color: white;
   font-size: 50px;
 }
 form p {
-  font-size: 16px;
-  padding-top: 15px;
+  padding: 5px;
+  font-size: 18px;
 }
 form button {
   margin: 5px;

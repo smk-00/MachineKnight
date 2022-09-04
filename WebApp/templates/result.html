@@ -3,24 +3,24 @@
 {{ super() }}
 
 <div class="container">
+  <a href="{{csv}}">Download Result</a>
   <table class="table">
     <thead>
       <tr>
         <th scope="col">#</th>
         <th scope="col">Id</th>
-        <th scope="col">Rent</th>
+        <th scope="col">Predicted Rent</th>
       </tr>
     </thead>
     <tbody>
-      {% for i in final_pred: %}
+      {% for i in range(length): %}
       <tr>
-        <th scope="row">i+1</th>
-        
-        <td>{final_pred[i]}</td>
+        <th scope="row">{{i+1}}</th>
+        <td>{{row_id[i]}}</td>
+        <td>{{final_pred[i].round(2)}}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
 </div>
-      
 {% endblock %}

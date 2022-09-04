@@ -14,19 +14,20 @@ from PIL import Image
 # Main Page
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('upload.html')
 
 #result Get
 @app.route('/result', methods=['GET'])
 def UplaodGet():
     return render_template('upload.html')
 
-#result Post
+#result Post 
 @app.route('/result', methods=['POST'])
 def UplaodPost():
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
+
     file = request.files['file']
     if file.filename == '':
         flash('No file selected for uploading')
@@ -35,6 +36,7 @@ def UplaodPost():
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
+
     file = request.files['file']
     if file.filename == '':
         flash('No file selected for uploading')
@@ -47,5 +49,15 @@ def UplaodPost():
         predict_data = loadData(os.path.join(app.config['UPLOAD_FOLDER'], file.filename))
         df, row_id = preProcessDf(predict_data)
         final = predict(df)
+        
+        final_csv = pd.DataFrame()
+        final_csv['id'] = row_id
+        final_csv['rent'] = final
+        
+        final_csv.to_csv('./static/uploads/result.csv', index=False)
 
-        return render_template('result.html', final_pred=final, row_id=row_id)
+        return render_template('result.html', final_pred=final, row_id=row_id, length=len(final), csv='./static/uploads/result.csv')
+
+    else:
+        flash('Allowed file types are -> csv')
+        return redirect(request.url)
