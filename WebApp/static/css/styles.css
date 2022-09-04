@@ -7,7 +7,6 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .wrapper-form{
@@ -42,7 +41,7 @@ body{
 }
 .logo {
   display: inline;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   font-size: 1.5em;
   font-weight: 900;
   color: rgba(27, 27, 27);
