@@ -25,8 +25,6 @@ select {
   height: 100%;
   width: 95%;
   margin: 5px;
-  border-radius: 5px;
-  border: 2px dashed rgb(27,27,27);;
   padding: 10px;
 
   display: flex;
@@ -62,7 +60,7 @@ form :where(p) {
 }
 
 form i {
-  color: white;
+  color: tomato;
   font-size: 50px;
 }
 form p {
@@ -70,10 +68,15 @@ form p {
   font-size: 18px;
 }
 form button {
-  margin: 5px;
+  margin: 1px;
   padding: 5px 20px;
   border: 0.5px solid tomato;;
   border-radius: 5px;
+}
+
+form button:hover{
+  transition: .2s;
+  box-shadow: 0px 0px 5px 1px tomato;
 }
 
 section .area-row {
