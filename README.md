@@ -28,6 +28,9 @@ It is a **regression** task. The features are in countinous and categorial.
 
 
 # Frontend & Flask App
+![image](https://user-images.githubusercontent.com/65155327/188319177-e2088d37-078d-4f67-8694-fdc77acc6443.png)
+![image](https://user-images.githubusercontent.com/65155327/188319213-86e9d791-e6ad-43f2-aed9-cd17c4646007.png)
+
 The API was developed in python FLASK.<br>
 
 >> pip install -r requirements.py <br>
