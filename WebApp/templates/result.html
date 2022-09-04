@@ -3,36 +3,24 @@
 {{ super() }}
 
 <div class="container">
-    <div class="row">
-      <div class="col-md-6 orginal-image">
-          <h3>Orginal Image</h3>
-        <img src="{{orginal_path}}" alt="Orginal">
-      </div>
-      <div class="col-md-6 pred-orgin">
-        <h3>Orginal Age &nbsp;&nbsp;&nbsp;: {{orginal_age}} Years</h3>
-        <h3>Predicted Bone Age : {{predicted_age}} Years</h3>
-      </div>
-    </div>
-
-    <div class="row analysis-section">
-        <h1 style="text-align: center;">X-Ray Analysis</h1>
-        {% for k,v in brois.items() %}
-        <div class="col-md-3">
-          <h5>{{k}}</h5>
-          <img src="{{v}}" alt = "broi image"  width="180" height="420">
-        </div>
-        {% endfor %}
-      </div>
-
-      <div class="row roi-analysis-section">
-        <h3 style="text-align: center;">ROI Extraction</h3>
-          {% for k,v in rois.items() %}
-          <div class="col-md-3">
-            <h5>{{k}}</h5>
-          <img src="{{v}}" alt = "broi image" width="220" height="220">
-          </div>
-          {% endfor %}
-      </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Id</th>
+        <th scope="col">Rent</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in final_pred: %}
+      <tr>
+        <th scope="row">i+1</th>
+        
+        <td>{final_pred[i]}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
       
 {% endblock %}

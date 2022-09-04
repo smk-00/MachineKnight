@@ -10,6 +10,12 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.wrapper-form{
+background: url('https://storage.googleapis.com/kaggle-competitions/kaggle/5407/media/housesbanner.png') no-repeat;
+background-size: cover;
+margin: 20px;
+}
+
 body{
   background-color: rgb(250, 250, 250);
   margin: 0 auto;
