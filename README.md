@@ -3,7 +3,9 @@
 All the Data analysis and model training are in ML folder. <br>
 All the Frontend and Flask application are in WebApp folder.
 
+<span style="color:tomato;">
 The **prediction** for the **test data** are in the **/ML/submission.csv**.<br>
+</span>
 
 The Exploratory Data Analysis & Data Prepration are done in **EDA_DataPrep.ipynb** file.<br>
 
