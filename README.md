@@ -22,10 +22,10 @@ It is a **regression** task. The features are in countinous and categorial.
 4. Then the data is normalized to certain range using RobustScaling methods.
 
 ## Model Training
-1. The **deep neural network** model is trained using **K-Fold**.
-    i)  The **"Mean Absolute Error"** is used as loss function.
-    ii) The training **MAE loss** for the model is about **2700** and **RMSE** is about **3764**
-    iii) In each fold the model is trained for **100 epochs** with the **learning rate** of **1e-3**.
+1. The **deep neural network** model is trained using **K-Fold**.<br>
+    i)  The **"Mean Absolute Error"** is used as loss function.<br>
+    ii) The training **MAE loss** for the model is about **2700** and **RMSE** is about **3764**<br>
+    iii) In each fold the model is trained for **100 epochs** with the **learning rate** of **1e-3**.<br>
 2. The same data is used to train other 4 models BaggingRegressor, ExtraTreesRegressor, RandomForestRegressor, GradientBoostingRegressor at the end they are with the training RMSE loss of 3770, 3923, 3773, 3731.
 3. All these models are ensembled for prediction.
 
