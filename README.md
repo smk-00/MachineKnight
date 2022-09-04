@@ -1,7 +1,8 @@
 # MachineKnight 🤖
 
 All the Data analysis and model training are in ML folder. <br>
-All the Frontend and Flask application are in WebApp folder.
+All the Frontend and Flask application are in WebApp folder.<br>
+**As the size of model are more than 20 MB the Model Weights are in drive. Download the model from GDRIVE the link is in WebApp/models/ .txt file and place them in same WebApp/models/ directory** <Br>
 
 ``` diff
 - The **prediction** for the **test data** are in the **/ML/submission.csv**. 
