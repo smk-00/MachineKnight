@@ -3,7 +3,7 @@
 All the Data analysis and model training are in ML folder. <br>
 All the Frontend and Flask application are in WebApp folder.
 
-The **prediction** for the **test data** are in the **submission.csv**.<br>
+The **prediction** for the **test data** are in the **/ML/submission.csv**.<br>
 
 The Exploratory Data Analysis & Data Prepration are done in **EDA_DataPrep.ipynb** file.<br>
 
@@ -28,8 +28,9 @@ It is a **regression** task. The features are in countinous and categorial.
 
 
 # Frontend & Flask App
-The API was developed in python FLASK.
+The API was developed in python FLASK.<br>
 
->> pip install -r requirements.py
->> python main.py
+>> pip install -r requirements.py <br>
+>> python WebApp/main.py<br>
+
 Check the **www.localhost:5000** for the frontend.
