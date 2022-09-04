@@ -1,4 +1,4 @@
-# MachineKnight
+# MachineKnight 🤖
 
 All the Data analysis and model training are in ML folder. <br>
 All the Frontend and Flask application are in WebApp folder.
